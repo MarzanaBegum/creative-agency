@@ -34,7 +34,7 @@ export function AuthProvider({ children }) {
         });
 
         // save user to the database
-        // fetch("http://localhost:5000/user", {
+        // fetch("https://thawing-island-50607.herokuapp.com//user", {
         //   method: "POST",
         //   headers: { "Content-type": "application/json" },
         //   body: JSON.stringify(newUser),

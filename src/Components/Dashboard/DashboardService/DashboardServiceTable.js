@@ -14,7 +14,7 @@ const DashboardServiceTable = () => {
   const [book, setBook] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/book/allBooking")
+    fetch("https://thawing-island-50607.herokuapp.com/book/allBooking")
       .then((res) => res.json())
       .then((result) => setBook(result));
   }, []);

@@ -22,7 +22,7 @@ const FeedbackCard = (props) => {
         avatar={
           <Avatar
             alt="Remy Sharp"
-            src={`http://localhost:5000/uploads/avatars/${avatar}`}
+            src={`${process.env.REACT_APP_IMAGE_URL}/${avatar}`}
             sx={{ width: 56, height: 56, bgcolor: deepPurple[500] }}
           />
         }

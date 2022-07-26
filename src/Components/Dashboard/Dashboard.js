@@ -21,7 +21,7 @@ const Dashboard = () => {
   const isAdmin = admins.find((admin) => admin?.email === data?.email);
 
   useEffect(() => {
-    fetch("http://localhost:5000/admin/allAdmins")
+    fetch("https://thawing-island-50607.herokuapp.com/admin/allAdmins")
       .then((res) => res.json())
       .then((result) => setAdmins(result));
   }, [admins]);

@@ -12,13 +12,13 @@ const DashboardService = () => {
   const isAdmin = admins.find((admin) => admin?.email === data?.email);
 
   useEffect(() => {
-    fetch("http://localhost:5000/admin/allAdmins")
+    fetch("https://thawing-island-50607.herokuapp.com/admin/allAdmins")
       .then((res) => res.json())
       .then((result) => setAdmins(result));
   }, [admins]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/book", {
+    fetch("https://thawing-island-50607.herokuapp.com/book", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email: data.email }),

@@ -15,7 +15,7 @@ const ManageServices = () => {
   const [services, setServices] = useState([]);
 
   async function handleDeleteService(serviceId) {
-    await fetch(`http://localhost:5000/service/delete/${serviceId}`, {
+    await fetch(`https://thawing-island-50607.herokuapp.com/service/delete/${serviceId}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
@@ -27,7 +27,7 @@ const ManageServices = () => {
   }
 
   useEffect(() => {
-    fetch("http://localhost:5000/service/allServices")
+    fetch("https://thawing-island-50607.herokuapp.com/service/allServices")
       .then((res) => res.json())
       .then((result) => setServices(result));
   }, [services]);

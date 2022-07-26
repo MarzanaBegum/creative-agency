@@ -7,7 +7,7 @@ const ParentsFeedback = () => {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/review/allReviews")
+    fetch("https://thawing-island-50607.herokuapp.com/review/allReviews")
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, [reviews]);

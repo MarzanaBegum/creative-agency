@@ -8,7 +8,7 @@ const MakeAdmin = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/admin", {
+      const response = await fetch("https://thawing-island-50607.herokuapp.com/admin", {
         method: "POST",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify({ email: admin }),

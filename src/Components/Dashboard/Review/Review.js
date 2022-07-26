@@ -22,7 +22,7 @@ const Review = () => {
       formData.append("description", description);
       formData.append("image", image);
 
-      const response = await fetch("http://localhost:5000/review/addReview", {
+      const response = await fetch("https://thawing-island-50607.herokuapp.com/review/addReview", {
         method: "POST",
         body: formData,
       });

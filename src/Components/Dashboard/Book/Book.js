@@ -19,7 +19,7 @@ const Order = () => {
       avatar: data?.service.avatar,
     };
     try {
-      const response = await fetch("http://localhost:5000/book/booking", {
+      const response = await fetch("https://thawing-island-50607.herokuapp.com/book/booking", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(orderObject),

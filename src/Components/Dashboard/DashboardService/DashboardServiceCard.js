@@ -8,7 +8,7 @@ const DashboardServiceCard = (props) => {
       <CardContent style={{ display: "flex" }}>
         <Avatar
           alt="Remy Sharp"
-          src={`http://localhost:5000/uploads/avatars/${avatar}`}
+          src={`${process.env.REACT_APP_IMAGE_URL}/${avatar}`}
         />
 
         <Button sx={{ marginLeft: "auto" }} variant="contained">
