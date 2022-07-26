@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+.services-container {
+  margin: 100px 10px 10px;
+}
+.services-container h1 {
+  text-align: center;
+  color: rgb(247, 47, 247);
+  font-weight: 500;
+  font-size: 36px;
+  margin-bottom: 60px;
+  font-family: "Dancing Script", cursive;
+}
+.serviceImg:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}

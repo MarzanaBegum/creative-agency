@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+
+.teacher-container {
+  margin-top: 100px;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+.teacher-container h2 {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  color: palevioletred;
+  font-size: 29px;
+  margin-bottom: 50px;
+  margin-top: 15px;
+  font-weight: 600;
+}
